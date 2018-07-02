@@ -134,7 +134,7 @@ article {
     margin: 0 auto 30px;
 }
 
-.backCa {
+.block1 {
     height: 200px;
     width: 100%;
     object-fit: cover;
@@ -145,16 +145,18 @@ article {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(99, 1, 1);
 }
 
 .backCab {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 132, 255);
 }
 
-.abc {
+.article {
     position: relative;
 }
+
+
