@@ -1,8 +1,11 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+@font-face {
+    font-family: 'EkkamaiStandard-Light';
+    src: url('/fonts/EkkamaiStandard-Light.ttf') format('truetype');
+    unicode-range: U+0E00–U+0E7F;
 }
-
-
+body{
+    font-family: EkkamaiStandard-Light;
+}
 
 .head_logo {
     display: flex;
@@ -16,11 +19,14 @@ body {
 .logo1 {
     height: 80px;
     margin-right: 20px;
+
 }
 
 .h1_logo {
+    font-family: 'EkkamaiStandard-Light';
     vertical-align: baseline;
     font-size: 270%;
+    color: #2A416A;
 }
 
 
@@ -56,7 +62,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #dcb6b5;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -68,7 +74,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #A6A89B;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -80,7 +86,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #E2C9A1;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -92,7 +98,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #C1DBDA;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -105,7 +111,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #c59593;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -117,7 +123,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #7e876a;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -129,7 +135,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #B99366;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -141,7 +147,7 @@ article {
     height: 200px;
     width: 80%;
     object-fit: cover;
-    background-color: cornflowerblue;
+    background-color: #8AABBA;
     justify-content: center;
     text-align: center;
     margin: 3px 25px;
@@ -248,31 +254,29 @@ article {
     color: white;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
 
-.container:hover .overlay {
-    opacity: 1;
-  }
+.hg-404 {
+	display: grid;
+	grid-template-areas: "header header "
+	                     "main main";
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: 50px 
+						1fr;
+    min-height: 100vh;
+    grid-gap: 30px;
+}
 
-.text-over{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
+@media screen and (max-width: 600px) {
+	.hg-404 {
+		grid-template-areas: "header"        
+		                     "main";
+		grid-template-columns: 100%;
+		grid-template-rows: 50px ;
+	}
+}
 
+.h1-404{
+    font-size: 8rem;
+    margin: 2rem 0 1rem calc(var(--size) * .5);
+    
+}
