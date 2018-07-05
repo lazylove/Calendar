@@ -1,8 +1,9 @@
 @font-face {
     font-family: 'EkkamaiStandard-Light';
-    src: url('fonts/EkkamaiStandard-Light.ttf') format('truetype');
+    src: url('./fonts/EkkamaiStandard-Light.ttf') format('truetype');
     unicode-range: U+0E00–U+0E7F;
 }
+
 body{
     font-family: EkkamaiStandard-Light;
 }
